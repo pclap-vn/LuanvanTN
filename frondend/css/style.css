@@ -1,0 +1,33 @@
+a.navbar-branch {
+    float: left !important;
+}
+nav.navbar{
+    background-color: rgba(10, 14, 48, 0.9) !important;
+}
+.navbar li a:hover{
+    color: white !important;
+}
+.navbar li a{
+    color: gray;
+}
+.navbar-nav {
+    float: left;
+    margin: 20px auto !important;
+}
+
+.main-content{
+    padding: 10px 45px;
+    background-color: thistle;
+}
+.col-md-4.text-center {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.navbar{
+    margin-bottom: 0 !important;
+}
+nav .navbar-toggler-icon{
+    background-color: rgb(66, 65, 65) !important;
+    color:white !important;
+}
