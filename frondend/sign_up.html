@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+       
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+         
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+                <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+         <style>
+             form {
+    width: 60%;
+    margin: 60px auto;
+    background: #efefef;
+    padding: 60px 120px 80px 120px;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.1);
+  }
+  label {
+    display: block;
+    position: relative;
+    margin: 40px 0px;
+  }
+  .label-txt {
+    position: absolute;
+    top: -1.6em;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: .8em;
+    letter-spacing: 1px;
+    color: rgb(120,120,120);
+    transition: ease .3s;
+  }
+  .input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: rgb(220,220,220);
+    font-weight: bold;
+    color: rgb(120,120,120);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: ease .3s;
+  }
+  .line-box {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background: #BCBCBC;
+  }
+  
+  .line {
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #8BC34A;
+    transition: ease .6s;
+  }
+  
+  .input:focus + .line-box .line {
+    width: 100%;
+  }
+  
+  .label-active {
+    top: -3em;
+  }
+  
+  button:hover {
+    background: #8BC34A;
+    color: #ffffff;
+  }
+  form h3{
+    margin: 20px 0px 10px;
+  }
+         </style>
+    </head>
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarResposive">
+            <span class="navbar-toggler-icon">Menu</span>    
+        </button>
+        <a class="navbar-branch" href="#">
+            <img src="./img/logo.jpg" height="100">
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarResposive">         
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Trang Chủ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cửa Hàng</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Đăng Tin</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Giới Thiệu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Liên Hệ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Đăng Ký/Đăng Nhập</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="./img/search_icon.png" height="25">
+                </a>
+            </li>
+        </ul>
+    </div> 
+  </nav> 
+  <div class="main-content">
+    <div class="container-fluid">
+        
+        <div class="row">
+            <div class="col-md-4 text-center">
+              <img src="./img/sale_icon.png" height="40px">Giảm giá 20% gói dịch vụ đăng tin cho cửa hàng
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="./img/store_icon.jpg" height="40px"> Khuyến mãi đặc biệt từ nhiều cửa hàng trên website
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="./img/moto_icon.png" height="40px"> Hàng ngàn chiếc xe với nhiều mẫu mã chủng loại khác nhau
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <form>
+                <h3>SIGN UP</h3>
+                <label>
+                  <p class="label-txt">NHẬP EMAIL CỦA BẠN:</p>
+                  <input type="text" class="input">
+                  <div class="line-box">
+                    <div class="line"></div>
+                  </div>
+                </label>
+                <label>
+                  <p class="label-txt">NHẬP TÊN ĐĂNG NHẬP:</p>
+                  <input type="text" class="input">
+                  <div class="line-box">
+                    <div class="line"></div>
+                  </div>
+                </label>
+                <label>
+                  <p class="label-txt">NHẬP MẬT KHẨU:</p>
+                  <input type="text" class="input">
+                  <div class="line-box">
+                    <div class="line"></div>
+                  </div>
+                </label>
+                <button type="submit">ĐĂNG KÍ</button>
+              </form>
+        </div>
+    </div>
+   
+    <script src="./bootstrap/js/jquery.min.js"></script>
+
+    <script src="./bootstrap/js/bootstrap.js"></script>
+</body>
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4">HỖ TRỢ KHÁCH HÀNG</h5>
+        <p><a href="#">Trung tâm hỗ trợ khách hàng</a></p>
+        <p>
+          <a href="#">Liên hệ hỗ trợ</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">GIỚI THIỆU</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">MỤC TIÊU</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">VỀ CHÚNG TÔI</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">BÀI VIẾT</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">CHÍNH SÁCH</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">ĐỊA CHỈ</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> Cần Thơ, Nguyễn Văn Cừ 311, VN</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> pclaptl1998@gmail.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+  
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> Choxe.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</html>

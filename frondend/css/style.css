@@ -2,13 +2,13 @@ a.navbar-branch {
     float: left !important;
 }
 nav.navbar{
-    background-color: rgba(10, 14, 48, 0.9) !important;
+    background-color: #6c757d !important;
 }
 .navbar li a:hover{
     color: white !important;
 }
 .navbar li a{
-    color: gray;
+    color:#212529 !important;
 }
 .navbar-nav {
     float: left;
@@ -17,7 +17,8 @@ nav.navbar{
 
 .main-content{
     padding: 10px 45px;
-    background-color: thistle;
+    background: #B0BCC2;
+    color: white;
 }
 .col-md-4.text-center {
     font-size: 18px;
@@ -30,4 +31,38 @@ nav.navbar{
 nav .navbar-toggler-icon{
     background-color: rgb(66, 65, 65) !important;
     color:white !important;
+}
+.center{
+  
+        margin:0 200px;
+       
+}
+.card {
+    height: 370px;
+    margin: 0 400px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+    padding: 15px 15px 15px 15px;
+    color: white !important;
+}
+body{
+  background-color: #6c757d  !important;
+}
+footer{
+    background-color: #212529  !important;
+}
+footer h5{
+    color: white;
+    font-weight: bold;
+}
+footer p{
+    color: #FFFFFF;
+}
+.form-group{
+    color: #3a5f83 !important;
+}
+.footer-copyright{
+    color: white !important;
 }
